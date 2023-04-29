@@ -1,0 +1,254 @@
+/*Criando Variáveis*/
+:root{
+    --color-main: #1A1A1A;
+    --color-secondary: #242326;
+    --color-tertiary: #2BC623;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /* outline: rgb(255, 255, 255) solid 1px; */
+}
+
+body{
+    background-color: var(--color-main);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*Estlização do header*/
+.cabecalho{
+    background-color: var(--color-secondary);
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 34px;
+}
+
+.cabecalho img{
+    height: 30px;
+}
+
+.cabecalho p{
+    font-size: 1.25rem;
+}
+.cabecalho p:first-of-type{
+    color: var(--color-tertiary);
+}
+
+.sobre {
+    position: relative;
+    text-decoration: none;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+.sobre::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--color-tertiary);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.sobre:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/*Estlização do main*/
+main{
+    display: flex;
+    justify-content: center;
+}
+
+.info-alunos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.info-alunos img{
+    height: 281px;
+    border-radius: 20px;
+    border: 3px solid var(--color-tertiary);
+    margin-top: 65px;
+}
+.info-alunos .linha{
+    height: 1px;
+    width: 521px;
+    background-color: var(--color-tertiary);
+    margin: 16px 0 23px 0;
+}
+
+.info-curso h3{
+    color: var(--color-tertiary);
+    font-weight: 400;
+}
+
+.materias{
+    width: 593px;
+    height: 80px;
+    background-color: var(--color-secondary);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.materias:hover{
+    border: 2px solid var(--color-tertiary);
+}
+
+.materias a{
+    font-size: 1.875rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: #FFF;
+}
+
+.materias, a:hover {
+    color: var(--color-tertiary);
+    transition: all .2s;
+}
+
+.conteiner-materias{
+    margin: 107px 0 0 105px;
+}
+
+/*Estilização do footer*/
+footer{
+    background-color: var(--color-secondary);
+    margin-top: 65px;
+    width: 100%;
+
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer img{
+    height: 31px;
+    margin: 0 8px;
+}
+
+/*Responsividade */
+@media (max-width: 1290px) and (min-width:621px) {
+    main{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .conteiner-materias{
+        margin: 107px 0 0 0;
+    }
+}
+
+@media (max-width: 620px) and (min-width: 531px){
+    main{
+        flex-direction: column;
+        align-items: center;
+    }
+    .conteiner-materias{
+        margin: 107px 0 0 0;
+    }
+
+    .materias {
+        width: 500px;
+        height: 80px;
+    }
+    .materias a{
+        font-size: 1.562rem;
+    }
+}
+
+@media (max-width: 530px) and (min-width: 421px){
+    .cabecalho{
+        height: 120px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    main{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info-alunos img{
+        height: 200px;
+    }
+
+    .info-alunos .linha{
+        width: 400px;
+    }
+
+    .conteiner-materias{
+        margin: 107px 0 0 0;
+    }
+
+    .materias{
+        width: 400px;
+        height: 80px;
+    }
+
+    .materias a{
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 420px){
+    .cabecalho{
+        height: 120px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    main{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info-alunos img{
+        height: 150px;
+    }
+
+    .info-alunos .linha{
+        width: 300px;
+    }
+
+    .conteiner-materias{
+        margin: 50px 0 0 0;
+    }
+
+    .materias{
+        width: 300px;
+        height: 60px;
+    }
+
+    .materias a{
+        font-size: .938rem;
+    }
+
+    .info-curso h3{
+        font-size: 1rem;
+    }
+
+    .info-curso p{
+        font-size: .75rem;
+    }
+}

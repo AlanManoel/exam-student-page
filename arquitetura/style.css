@@ -1,0 +1,190 @@
+:root{
+    --color-main: #1A1A1A;
+    --color-secondary: #242326;
+    --color-tertiary: #2BC623;
+}
+
+
+*{
+    margin: 0px;
+    box-sizing: border-box;
+    padding: 0px;
+    /* outline: rgb(255, 255, 255) solid 1px;    */
+}
+
+body{
+    background-color: var(--color-main);
+    color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+}
+
+section{
+    margin-top: 65px;
+}
+
+/*Estlização do cabeçalho*/
+header{
+    position:  fixed;
+    top: 0;
+    width: 100%;
+
+    background-color: var(--color-secondary);
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 34px;
+    flex-wrap: wrap;
+}
+
+header img{
+    height: 30px;
+}
+
+header p{
+    font-size: 1.25rem;
+}
+
+header p:first-of-type{
+    color: var(--color-tertiary);
+}
+
+.voltar {
+    position: relative;
+    text-decoration: none;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.voltar:hover{
+    color: var(--color-tertiary);
+}
+
+.voltar::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--color-tertiary);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.voltar:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/*Estilização da seção sobre-materia*/
+.sobre-materia{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 120hpx;
+}
+
+.sobre-materia h1{
+    font-size: 3.125rem;
+    font-weight: 400;
+    margin-bottom: 34px;
+}
+
+.sobre-materia p{
+    width: 993px;
+    font-size: 1.125rem;
+    margin-bottom: 34px;
+}
+
+.sobre-materia img{
+    width: 493px;
+    height: 328px;
+    background: linear-gradient(180deg, rgba(26, 26, 26, 0) 0%, var(--color-main) 100%), url(../images/arquitetura.png);
+    background-size: cover;
+}
+
+/*Estilização da Seção da ementa*/
+
+.ementa{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ementa h2{
+    font-weight: 400;
+    font-size: 2.5rem;
+}
+
+.ementa .linha{
+    height: 1px;
+    width: 300px;
+    background-color: var(--color-tertiary);
+    margin-bottom: 42px;
+}
+
+.conteiner-ementa{
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.ementa-item{
+    list-style: none;
+    font-size: 1.25rem;
+    margin: 0 15px;
+}
+
+/*Estilização da bibliografia*/
+
+.bibliografia{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bibliografia h2{
+    font-weight: 400;
+    font-size: 2.5rem;
+}
+
+.bibliografia .linha{
+    height: 1px;
+    width: 300px;
+    background-color: var(--color-tertiary);
+    margin-bottom: 42px;
+}
+.livro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.conteiner-livros{
+    display: flex;
+}
+
+.livro img{
+    height: 350px;
+    border-radius: 20px;
+    margin: 41px 30px;
+}
+
+.conteiner-comprar{
+    background-color: var(--color-tertiary);
+    height: 36px;
+    width: 166px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.conteiner-comprar p{
+    color: #FFF;
+    font-size: 1.25rem;
+    display: block;
+}
