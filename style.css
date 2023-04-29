@@ -147,6 +147,13 @@ footer img{
 }
 
 /*Responsividade */
+@media (max-width: 1920px) and (min-width: 1291px){
+    footer{
+        position: absolute;
+        bottom: 0;
+    }
+}
+
 @media (max-width: 1290px) and (min-width:621px) {
     main{
         flex-direction: column;
