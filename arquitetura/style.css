@@ -29,7 +29,6 @@ header{
 
     background-color: var(--color-secondary);
     height: 55px;
-    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -189,58 +188,68 @@ header p:first-of-type{
 }
 
 /*Estilização da seção do video*/
- .video{
+.conteinte-video{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.video h2{
+.conteinte-video h2{
     font-weight: 400;
     font-size: 2.5rem;
 }
 
-.video .linha{
+.conteinte-video .linha{
     height: 1px;
     width: 460px;
     background-color: var(--color-tertiary);
     margin-bottom: 42px;
 }
 
+.video{
+    width:870px;
+    height:490px; 
+}
+
 /*Estilização da tabela*/
-.tabela{
+.conteiner-tabela{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.tabela h2{
+.conteiner-tabela h2{
     font-weight: 400;
     font-size: 2.5rem;
 }
 
-.tabela .linha{
+.conteiner-tabela .linha{
     height: 1px;
     width: 660px;
     background-color: var(--color-tertiary);
     margin-bottom: 42px;
 }
 
-.tabela table{
+.conteiner-tabela table{
     font-size: 1.25rem;
 }
 
-.tabela table td{
+.conteiner-tabela table td{
     border-bottom: 1px solid #2BC623;
 }
 
-.tabela table a{
+.conteiner-tabela table a{
     color: #FFF;
     text-decoration: none;
 }
 
-.tabela .rede-social {
+.conteiner-tabela .rede-social {
     color: var(--color-tertiary)
+}
+
+.conteiner-tabela .tabela{
+    width: 1000px;
+    overflow: auto;
 }
 
 /*Estilização do footer*/
@@ -259,3 +268,24 @@ footer img{
 }
 
 /*Responsividade*/
+@media (max-width: 1140px){
+    .conteiner-livros{
+        /* flex-direction: column; */
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 1061px){
+    .sobre-materia p{
+        width: 793px;
+        text-align: justify;
+    }
+}
+
+@media (max-width: 950px){
+    .video{
+        width: 770px;
+        height: 390px; 
+    }
+}
