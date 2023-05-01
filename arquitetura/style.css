@@ -369,6 +369,10 @@ footer img{
 }
 
 @media (max-width: 470px){
+    header p{
+        font-size: 1rem;
+    }
+
     .sobre-materia p{
         width: 300px;
     }
@@ -401,11 +405,5 @@ footer img{
     }
     h2{
         text-align: center;
-    }
-}
-
-@media (max-width: 460px){
-    header p{
-        font-size: 1rem;
     }
 }
