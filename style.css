@@ -147,7 +147,14 @@ footer img{
 }
 
 /*Responsividade */
-@media (max-width: 1920px) and (min-width: 1291px){
+/* @media (max-width: 1920px) and (min-width: 1291px){
+    footer{
+        position: absolute;
+        bottom: 0;
+    }
+} */
+
+@media (min-height: 768px){
     footer{
         position: absolute;
         bottom: 0;
