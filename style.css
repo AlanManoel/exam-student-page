@@ -146,7 +146,7 @@ footer img{
     margin: 0 8px;
 }
 
-@media (min-height: 770px){
+@media (min-height: 768px){
     footer{
         position: absolute;
         bottom: 0;
