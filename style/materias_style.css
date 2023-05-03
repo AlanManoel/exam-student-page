@@ -101,10 +101,28 @@ header p:first-of-type{
     margin-bottom: 34px;
 }
 
-.imagem{
+.imagem-arquitetura{
+    width: 493px;
+    height: 328px;
+    background: linear-gradient(180deg, rgba(26, 26, 26, 0) 0%, var(--color-main) 100%), url(../images/arquitetura.png);
+    background-size: cover;
+}
+.imagem-engenharia{
     width: 493px;
     height: 328px;
     background: linear-gradient(180deg, rgba(26, 26, 26, 0) 0%, var(--color-main) 100%), url(../images/engenharia.png);
+    background-size: cover;
+}
+.imagem-prog-web{
+    width: 493px;
+    height: 328px;
+    background: linear-gradient(180deg, rgba(26, 26, 26, 0) 0%, var(--color-main) 100%), url(../images/pro-web.png);
+    background-size: cover;
+}
+.imagem-projeto{
+    width: 493px;
+    height: 328px;
+    background: linear-gradient(180deg, rgba(26, 26, 26, 0) 0%, var(--color-main) 100%), url(../images/projeto-integrador.png);
     background-size: cover;
 }
 
@@ -273,12 +291,12 @@ footer img{
         width: 770px;
         height: 390px; 
     }
-
     .conteiner-ementa{
         flex-direction: column;
         text-align: center;
         margin: 0;
     }
+
     .ementa-item{
         margin: 5px 0;
     }
@@ -327,10 +345,23 @@ footer img{
         width: 450px;
     }
     
-    .imagem{
+    .imagem-arquitetura{
         width: 443px;
         height: 278px;
     }
+    .imagem-engenharia{
+        width: 443px;
+        height: 278px;
+    }
+    .imagem-prog-web{
+        width: 443px;
+        height: 278px;
+    }
+    .imagem-projeto{
+        width: 443px;
+        height: 278px;
+    }
+
     .conteiner-livros{
         grid-template-columns: repeat(1, 1fr);
     }
@@ -357,7 +388,19 @@ footer img{
         text-align: center;
     }
 
-    .imagem{
+    .imagem-arquitetura{
+        width: 403px;
+        height: 238px;
+    }
+    .imagem-engenharia{
+        width: 403px;
+        height: 238px;
+    }
+    .imagem-prog-web{
+        width: 403px;
+        height: 238px;
+    }
+    .imagem-projeto{
         width: 403px;
         height: 238px;
     }
@@ -376,7 +419,19 @@ footer img{
     .sobre-materia p{
         width: 300px;
     }
-    .imagem{
+    .imagem-arquitetura{
+        width: 353px;
+        height: 200px;
+    }
+    .imagem-engenharia{
+        width: 353px;
+        height: 200px;
+    }
+    .imagem-prog-web{
+        width: 353px;
+        height: 200px;
+    }
+    .imagem-projeto{
         width: 353px;
         height: 200px;
     }
@@ -396,7 +451,19 @@ footer img{
 }
 
 @media (max-width: 370px){
-    .imagem{
+    .imagem-arquitetura{
+        width: 250px;
+        height: 150px;
+    }
+    .imagem-engenharia{
+        width: 250px;
+        height: 150px;
+    }
+    .imagem-prog-web{
+        width: 250px;
+        height: 150px;
+    }
+    .imagem-projeto{
         width: 250px;
         height: 150px;
     }
