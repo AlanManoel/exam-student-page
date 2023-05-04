@@ -100,20 +100,20 @@ footer img{
 
 /*Responsivel*/
 
-@media (max-width: 1250px) and (min-width: 851px){
+@media (max-width: 1250px){
     main p{
         width: 800px;
     }
 }
 
-@media (max-width: 850px) and (min-width: 641px){
+@media (max-width: 850px){
     main p{
         width: 600px;
         font-size: 1.125rem;
     }
 }
 
-@media (max-width: 640px) and (min-width: 441px){
+@media (max-width: 640px){
     main p{
         width: 400px;
         font-size: 1.062rem;
@@ -132,6 +132,5 @@ footer img{
     main p{
         width: 250px;
         font-size: .937rem;
-        text-align: center;
     }
 }
