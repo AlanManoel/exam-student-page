@@ -146,7 +146,7 @@ footer img{
     margin: 0 8px;
 }
 
-@media (min-height: 720px){
+@media (min-height: 665px) and (min-width: 1290px){
     footer{
         position: absolute;
         bottom: 0;
@@ -154,16 +154,13 @@ footer img{
 }
 
 @media (max-width: 1290px){
-    footer{
-        position: absolute;
-        bottom: 0;
-    }
+    
 
     main{
         flex-direction: column;
         align-items: center;
     }
-
+    
     .conteiner-materias{
         margin: 107px 0 0 0;
     }
