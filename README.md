@@ -35,7 +35,7 @@
 <img src="./images/prt-desktop.png">
 
 <div>
-<img src="./images/prt-mobile-2.png" height="300px">
-<img src="./images/prt-mobile.png"  height="300px">
-<img src="./images/prt-mobile-3.png"  height="300px">
+<img src="./images/prt-mobile-2.png" height="400px">
+<img src="./images/prt-mobile.png"  height="400px">
+<img src="./images/prt-mobile-3.png"  height="400px">
 </div>
